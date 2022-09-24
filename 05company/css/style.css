@@ -1,0 +1,55 @@
+@charset 'utf-8';
+
+.toggle{display: none;}
+
+/* header */
+header{position: absolute;z-index: 1;width: 100%;top: 20px;background: #6A83B2;padding: 20px 0;box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);}
+header.fixed{position: fixed;top: 0;padding: 5px;}
+header .navbarWrap{width: 1240px;margin: 0 auto;display: flex;height: 60px;}
+header .navbar{margin-left: auto;margin-right: 20px;}
+header .navbar ul{display: flex;width: 750px;}
+header .navbar ul li{width: calc( 100% / 5 );position: relative;}
+header .navbar ul li:after{content: "";position: absolute;width: 100%;height: 2px;
+                           background: #fff;transition: 0.3s;transform: scaleX(0);}
+header .navbar ul li:hover:after{transform: scaleX(0.7)}
+header .navbar ul li a{height: 40px;display: flex;align-items: center;justify-content: center;color: #fff;font-weight: bolder;}
+
+header .language{display: flex;width: 80px;justify-content: center;align-items: center;}
+header .language .kor,
+header .language .eng
+{width: 80px;height: 40px;;border: 1px solid rgb(45, 31, 121);display: flex;
+justify-content: center;align-items: center;margin-left: -1px;background: #fff;
+color: rgb(25, 8, 120);font-size: 16px;font-weight: bolder;border-radius: 2px;}
+header .language .active{background:rgb(25, 8, 120);color: #fff;}
+
+.visualWrap{}
+.visualWrap .bx-wrapper {
+    -moz-box-shadow: 0 0 0px #ccc;
+    -webkit-box-shadow: 0 0 0px #ccc;
+    box-shadow: 0 0 0px #ccc;
+    border: 0 none;
+    margin-bottom: 0;
+}
+.visualWrap .simg{height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+    display: flex;justify-content: center;align-items: center;}
+.visualWrap .bx-wrapper .bx-pager{bottom: 350px}
+.visualWrap .text{text-align: center;transform: translateY(-660px);}
+.visualWrap .text .text_main{font-size: 4vw;}
+.visualWrap .text .text_sub{width:80vw;}
+
+@media screen and (max-width: 768px){
+    header{display: none;}
+    .visualWrap{height: 400px;}
+    .visualWrap .simg{height: 300px;min-height: initial;}
+    .visualWrap .bx-wrapper .bx-pager{bottom: 10px}
+    .visualWrap .text{text-align: left;transform: translateY(0);}
+}
+    
+
+
+ 
+

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colorbox.css">
+
+    
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            var myslider = $(".slider").bxSlider({
+                controls:false
+            });
+            
+            var myslider2 = $(".slider2").bxSlider({
+                auto:true,
+                controls:false,
+            });
+
+            $(".next").click(function(){
+                myslider.goToNextSlide()
+            });
+            $(".prev").click(function(){
+                myslider.goToPrevSlide()
+            });
+            $(".youtube").colorbox({
+                iframe:true,
+                innerWidth:1000,
+                innerHeight:562.5
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="topNavWrap">
+            <div class="navTop">
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">대학교</a></li>
+                        <li><a href="#">입학안내</a></li>
+                        <li><a href="#">대학원</a></li>
+                    </ul>
+                </div>
+                <div class="utilMenu">
+                    <ul> 
+                        <li><a href="#">글자크기</a></li>
+                        <li class="size">
+                            <a href="#">
+                                <div class="left">
+                                    <div class="minus"></div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="right">
+                                    <div class="plus_one"></div>
+                                    <div class="plus_two"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#">찾아오시는길</a></li>
+                        <li><a href="#">ENGLISH</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="logo_wrapper">
+            <div class="navlogo">
+                <div class="navo"><h1 class="logo"><a href="#"><img src="images/logo_on.png" alt=""></a></h1> </div>
+
+
+                    <div class="logomenu">
+                     <ul class="lmenu">
+                        <li><a href="#">대학소개</a></li>
+                        <li><a href="#">학과소개</a></li>
+                        <li><a href="#">학사안내</a></li>
+                        <li><a href="#">대학생활</a></li>
+                        <li><a href="#">학생지원센터</a></li>
+                     </ul>
+                   </div>
+                 </div>
+                 
+            </div>
+        </div>
+        </header>
+    <section class="section">
+        <div class="container titleWrap">
+            <div class="title">
+                <h3>THINKING THAT GOES DEEPER</h3>
+                <h2>더 깊게 사유하는 예술교육</h2>
+            </div>
+            <div class="secBannerWrap">
+                <ul>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li>test</li>
+                    <li>test</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container contentWrap">
+            <ul class="clearfix">
+                <li>
+                    <!-- size 900*450 -->
+                   <ul class="slider">
+                       <li>
+                           <img src="images/getImage.png" alt="">
+                           <div class="contentbanner1">
+                            <a href="#"><img src="images/Group 8.png" alt=""></a>
+                           </div>
+                        </li>
+                       <li>
+                           <img src="images/getImage (1).png" alt="">
+                            <div class="contentbanner2">
+                            <a href="#"><img src="images/Group 8.png" alt=""></a>
+                           </div>
+                        </li>
+                       <li>
+                           <img src="images/getImage (2).png" alt="">
+                           <div class="contentbanner3">
+                            <a href="#"><img src="images/Group 8.png" alt=""></a>
+                           </div>
+                        </li>
+                       <li>
+                           <img src="images/getImage (3).png" alt="">
+                           <div class="contentbanner4">
+                            <a href="#"><img src="images/Group 8.png" alt=""></a>
+                           </div>
+                        </li>
+                   </ul>
+                   <div class="prev">
+                       <img src="images/arrow01.png" alt="">
+                   </div>
+                   <div class="next">
+                        <img src="images/arrow02.png" alt="">
+                   </div>
+
+                 
+
+                </li>
+                <li class="cardWrap">
+                    <div class="cardboby">
+                        <h3><span>APP<span class="span2">으로</span> 스마트 도서관 <span class="span2">바로이용하자</span><span class="span3">!</span></span></h3>
+                        <p>모바일 열람증은<br>
+                            도서관 자료실 / 도서대출 등에
+                            사용할 수 있습니다. </p><a href="#" class="cardicon">자세히보기</a>
+                           
+                    </div>
+                </li>
+                 <li>
+                    <div class="banner">
+                        <ul class="clearfix">
+                            <li>
+                             <h2>HOT LINK</h2>   
+                                 <div class="banner_boby">
+                                     <ul class="clearfix">
+                                         <li class="ban1">
+                                             <img src="images/link icon1.png" alt="">
+                                             <h3>국제교류<p>센터</p></h3> 
+                                         </li>
+                                         <li class="ban2">  
+                                             <img src="images/link icon2.png" alt="">
+                                             <h3>원격지원<p>시스템</p></h3> 
+                                         </li>
+                                         <li class="ban3">  
+                                             <img src="images/link icon3.png" alt="">
+                                             <h3>예산/결산<p>공고</p></h3> 
+                                         </li>
+ 
+ 
+ 
+                                     </ul>
+                                 </div>
+                            </li>
+                         </ul>
+                     </div>
+                 </li>
+                <li>
+                    <div class="news">
+                       <div>
+                            <h2>공지사항</h2>
+                            <div class="wall"></div>
+                            <ul class="news_clearfix">
+                                   <li class="newsone_clearfix">
+                                       <h5>[공지] 한국대학교 웹진...</h5>
+                                       <p>[보도] 우수대학교 선정 수상<br>
+                                               [공지] 대학입시 설명회<br>
+                                               [공지] 2016년 1학기 성적...</p>
+                                            <span class="newsspan">2016-06-12<br>
+                                                  2016-06-17<br>
+                                                  2016-06-05<br>
+                                                  2016-05-14</span>
+                                    </li>
+                                </ul>
+                          </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sns">
+                        <h2>SNS NEWS</h2>
+                        
+                            <ul class="snsclearfix">
+                                <li class="snsnav">
+                                    <img src="images/unsplash_rk8LDPVx7pM.png" alt="">
+                                </li>
+                                    <li>
+                                        <h5>한국대학교는<br>2017학년도 신입생<br>입학식을 3월 2일(목)<br>본교 종합체육관 ...</h5>
+                                </li>
+                            </ul>
+                     <div class="snstwoclearfix">
+                           <ul>
+                               <a href="#"><img src="images/i7.png" alt=""></a>
+                               <a href="#"><img src="images/i8.png" alt=""></a>
+                               <a href="#"><img src="images/i9.png" alt=""></a>
+                               <a href="#"><img src="images/i5.png" alt=""></a>
+                           </ul>
+                       
+                    </div>
+                    </div>
+                </li>
+                <li class="tour">
+                    <div>
+                         <a href="#" class="">자세히보기</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                         <a href="https://www.youtube.com/embed/_YDxM3pxBqI" class="youtube">
+                             <img src="images/Frame 16.png" alt="">
+                             <div class="bg"></div>
+                             <div class="barWrap"></div>
+                        </a>
+                    </div>
+                    
+                    
+                </li>
+                <li>
+                    <div class="slider2">
+                        <div class="slide">
+                            <img src="images/banner 1.png" alt="">
+                            <h3 class="one_text">2022.03.03.(목) ~ 03.12.(토) 17:00 10일간 </h3>
+                            <h2 class="one_text">서울예술대학교 대학혁신지원사업 직원 채용 공고</h2>
+                            <div class="button one">
+                                <a href="#">
+                                    <h4 class="one">자세히 보기</h4>
+                                    <img src="images/Vector.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/banner 2.png" alt="">
+                            <h3 class="two_text">2022.03.03.(목) ~ 03.12.(토) 17:00 10일간 </h3>
+                            <h2 class="two_text">서울예술대학교 대학혁신지원사업 직원 채용 공고</h2>
+                            <div class="button two">
+                                <a href="#">
+                                    자세히 보기
+                                    <img src="images/Vector.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/banner 3.png" alt="">
+                            <h3 class="three_text">2022.03.03.(목) ~ 03.12.(토) 17:00 10일간 </h3>
+                            <h2 class="three_text">서울예술대학교 대학혁신지원사업 직원 채용 공고</h2>
+                            <div class="button three">
+                                <a href="#">
+                                    자세히 보기
+                                    <img src="images/Vector.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/banner 4.png" alt="">
+                            <h3 class="four_text">2022.03.03.(목) ~ 03.12.(토) 17:00 10일간 </h3>
+                            <h2 class="four_text">서울예술대학교 대학혁신지원사업 직원 채용 공고</h2>
+                            <div class="button four">
+                                <a href="#">
+                                    자세히 보기
+                                    <img src="images/Vector.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+</html>

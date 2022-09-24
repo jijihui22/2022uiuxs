@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <style>
+
+
+
+
+        /* toggle  */
+        .toggle{
+            width: 40px;height: 40px;background: pink;
+            display: flex;justify-content: center;align-items: center;
+            cursor: pointer;
+        }
+        .toggle div{
+            width: 24px;height: 3px;background: #000;
+            border-radius:5px;position: absolute;
+            transition:0.1s
+        }
+        .toggle .bar1{transform: translateY(-10px);}
+        .toggle .bar3{transform: translateY(10px);}
+
+        .toggle.active .bar1{transform: translateY(0) rotate(45deg);}
+        .toggle.active .bar2{opacity:0}
+        .toggle.active .bar3{transform: translateY(0px) rotate(-45deg);}
+
+        .toggle{display: none;}
+
+
+
+
+
+        
+        @media screen and (max-width:768px){
+            .container{width: 100%;padding: 14px;}
+        }
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div>
+            <h1><a href="#"><img src="./images/logo.png" alt=""></a></h1>
+            <nav class="manu">
+                <ul>
+                    <li><a href="#">COMPANY</a></li>
+                    <li><a href="#">MODELS</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="language">
+                <div class="kor">KOR</div>
+                <div class="eng">ENG</div>
+            </div>
+            <div class="toggle">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </header>
+    <div class="mainslider">
+        <ul class="slider">
+            <li style="background-image: url(./images/mainslider.png);" class="img">
+                <div class="textwrap">
+                    <h2 class="text_main">제품, 그 이상을 넘어 작품으로</h2>
+                    <p class="text_sub">More than just a product</p>
+                </div>
+            </li>
+            <li style="background-image: url(./images/mainslider.png);" class="img">
+                <div class="textwrap">
+                    <h2 class="text_main">제품, 그 이상을 넘어 작품으로</h2>
+                    <p class="text_sub">More than just a product</p>
+                </div>
+            </li>
+            <li style="background-image: url(./images/mainslider.png);" class="img">
+                <div class="textwrap">
+                    <h2 class="text_main">제품, 그 이상을 넘어 작품으로</h2>
+                    <p class="text_sub">More than just a product</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="contents">
+        <ul>
+            <li>   <!-- 1 -->
+                <a href="#">
+                    <div class="card">
+                       <img src="images/icon01_01.png" alt="">
+                       <p>뉴스레터신청</p>
+                    </div>
+                </a>
+            </li>
+            <li>   <!-- 2 -->
+                <a href="#">
+                    <div class="card">
+                       <img src="images/icon01_01.png" alt="">
+                       <p>뉴스레터신청</p>
+                    </div>
+                </a>
+            </li>
+            <li>   <!-- 3 -->
+                <a href="#">
+                    <div class="card">
+                       <img src="images/icon01_01.png" alt="">
+                       <p>뉴스레터신청</p>
+                    </div>
+                </a>
+            </li>
+            <li>   <!-- 4 -->
+                <a href="#">
+                    <div class="card">
+                       <img src="images/icon01_01.png" alt="">
+                       <p>뉴스레터신청</p>
+                    </div>
+                </a>
+            </li>
+            <li>   <!-- 5 -->
+                <a href="#">
+                    <div class="card">
+                       <img src="images/icon01_01.png" alt="">
+                       <p>뉴스레터신청</p>
+                    </div>
+                </a>
+            </li>
+            <li>   <!-- 6 -->
+                <a href="#">
+                    <div class="card">
+                       <img src="images/icon01_01.png" alt="">
+                       <p>뉴스레터신청</p>
+                    </div>
+                </a>
+            </li>
+            <li>   <!-- 7 -->
+                <a href="#">
+                    <div class="card">
+                       <img src="images/icon01_01.png" alt="">
+                       <p>뉴스레터신청</p>
+                    </div>
+                </a>
+            </li>
+            <li>   <!-- 8 -->
+                <a href="#">
+                    <div class="card">
+                       <img src="images/icon01_01.png" alt="">
+                       <p>뉴스레터신청</p>
+                    </div>
+                </a>
+            </li>
+            <li>   <!-- 9 -->
+                <a href="#">
+                    <div class="card">
+                       <img src="images/icon01_01.png" alt="">
+                       <p>뉴스레터신청</p>
+                    </div>
+                </a>
+            </li>
+            <li>   <!-- 10 -->
+                <a href="#">
+                    <div class="card">
+                       <img src="images/icon01_01.png" alt="">
+                       <p>뉴스레터신청</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+
+
+
+
+
+
+    <script>
+        let chk = true;
+        $(".toggle").click(function(){
+            
+            if(chk == true){
+                $(this).addClass("active");
+                console.log( $(".gnb").css("left") ) // getter
+                $(".gnb").css("left",0);
+                // $(".gnb").css({left:0,top:30,"background-color":"red"})
+                chk = false;
+            }else{
+                $(this).removeClass("active");
+                $(".gnb").css("left","-100%")
+                chk = true;
+            }
+        })
+
+        $(window).resize(function(){
+            $(".toggle").removeClass("active");
+            $(".gnb").removeAttr("style");
+        })
+    </script>
+</body>
+</html>

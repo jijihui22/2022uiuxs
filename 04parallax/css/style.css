@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+body{height: 400vh;}
+header{width: 100vw; height: 100vh;background: #feae1b;position: relative;}
+
+.layer{
+    width: 100vw;height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 1000px;
+    position: absolute;
+    transition: 0.3s;
+}
+.pic0{
+    background-image: url(../images/parallax0.png);
+}
+.pic1{
+    background-image: url(../images/parallax1.png);
+    transform: translateY(100);
+}
+.pic2{
+    background-image: url(../images/parallax2.png);
+}
+.pic3{
+    background-image: url(../images/parallax3.png);
+}
+.pic4{
+    background-image: url(../images/parallax4.png);
+}
+.pic5{
+    background-image: url(../images/parallax5.png);
+}
+.pic6{
+    background-image: url(../images/parallax6.png);
+}
+.pic7{
+    background-image: url(../images/parallax7.png);
+}
+.pic8{
+    background-image: url(../images/parallax8.png);
+}
+
+container{width: 100vw;height: 100vh;}
